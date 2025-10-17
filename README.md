@@ -1,3 +1,22 @@
+# Scattermoe Benchmarking.
+
+this repo contains a few scripts for benchmarking the performance of the scattermoe kernel from https://github.com/shawntan/scattermoe.git.
+
+```
+cd scattermoe_benchmark
+module load thapi
+module load frameworks
+python3 -m pip install viztracer
+export PATH=/home/sww/.local/aurora/frameworks/2025.2.0/bin:$PATH
+bash benchmark_with_iprof.sh
+```
+
+You will need to change the path above.
+
+
+
+
+
 # scattermoe
 Triton-based implementation of Sparse Mixture-of-Experts (SMoE) on GPUs.
 ScatterMoE builds upon existing implementations, and overcoming some of the limitations to improve inference, training speed, and memory footprint. 
