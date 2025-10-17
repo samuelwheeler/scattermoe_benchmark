@@ -1,12 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-
-# module load thapi
-# module load frameworks
-python3 -m pip install viztracer
-export PATH=/home/sww/.local/aurora/frameworks/2025.2.0/bin:$PATH
-
 # ---- Configuration grids ----
 INPUT_SIZES=(1024 2048)
 HIDDEN_SIZES=(1024 2048 4096 8192)
